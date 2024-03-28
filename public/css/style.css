@@ -1,0 +1,203 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use viewport height to ensure footer sticks at the bottom */
+}
+
+main {
+    flex: 1;
+}
+
+.featured-book-cover {
+    height: 200px; /* Adjust this value to your preference */
+    object-fit: cover;
+}
+
+.text-center{
+    padding-top: 30px;
+}
+footer {
+    width: 100%;
+    background-color: #0D4637; /* Your desired footer background color */
+    color: #ffffff; /* Footer text color */
+    text-align: center; /* Center-align footer content */
+    padding: 20px 0; /* Adjust padding as needed, removed !important to avoid conflicts */
+}
+
+.container, .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto; /* Center content without affecting width */
+}
+
+#content {
+    flex: 1;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+.home-background {
+    background-color: #f0f0f0; /* Replace #f0f0f0 with your desired color */
+}
+body > header > div > div > div.col-lg-7.p-3.p-lg-5.pt-lg-3 > p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navbar-brand, .nav-link {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body > nav > div {
+    margin-right: 50px;
+}
+
+body > div > div > div.hero-text > h1 {
+    font-size: 3rem;
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #f0f0f0 !important;
+}
+
+.filter-container{
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body > div > div > div.hero-text > div > p {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f0f0f0 !important;
+
+}
+
+body > div.px-4.py-5.my-5.text-center > h1{
+    font-size: 3rem;
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+body > header > div > div > div.col-lg-7.p-3.p-lg-5.pt-lg-3 > h1 {
+    font-size: 3rem;
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body > header > div > div > div.col-lg-7.p-3.p-lg-5.pt-lg-3 > p {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-5, .display-4, .mb-4 {
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+
+.about-project, .details-card {
+    background-color: #e0d2c3 !important; /* Or your desired color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-text, .lead, .lead > p, .list, body > div > div > div > p:nth-child(6) {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-body .author, .card-body .rating {
+    text-align: left;
+  }
+
+  .card-body {
+    text-align: left; /* Ensures content within the card body aligns left */
+  }
+  
+  /* This is a Bootstrap utility class example, if you're using Bootstrap */
+  .text-left {
+    text-align: left !important; /* Use !important carefully, only if necessary */
+  }
+
+#custom-cards > h2, .card-title {
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+  /* Change the color of the navbar brand and nav links */
+  .navbar-dark .navbar-brand,
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important; /* Update this color as needed */
+  }
+
+  .card-cover[data-bg-img] {
+    background-size: cover;
+    background-position: center;
+}
+
+  .universal-footer {
+    width: 100%; /* Full width */
+    margin-left: auto; /* Center the footer */
+    margin-right: auto; /* Center the footer */
+}
+
+
+body > header > div > div > div.col-lg-7.p-3.p-lg-5.pt-lg-3 > div > a.btn.btn-warning.btn-lg.px-4.me-md-2.fw-bold, body > header > div > div > div.col-lg-7.p-3.p-lg-5.pt-lg-3 > div > a.btn.btn-success.btn-lg.px-4, #custom-cards > div > div:nth-child(2) > div > div > a {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  footer, .navbar{
+    background-color: #0D4637 !important; /* Ensure footer background is black */
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  
+  footer .nav-link, footer p {
+    color: #ffffff !important; /* Apply the custom color to footer links and paragraph */
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .filter-container {
+    text-align: center; /* Center-align the filters */
+    margin-bottom: 20px; /* Add some space below the filters */
+}
+
+.home-top, .home-bottom, .col> div{
+    background-color: #e0d2c3;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        padding: 10px; /* Increase padding on smaller screens */
+        display: flex; /* Use flexbox for better alignment */
+        flex-direction: column; /* Stack filters vertically on small screens */
+        gap: 10px; /* Add gap between stacked filters */
+    }
+}
